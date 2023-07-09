@@ -88,10 +88,25 @@ a {
   display: flex;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 576px) {
   .container {
     flex-direction: column;
     align-items: center;
+  }
+
+  .market-data {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .container {
+    flex-direction: column;
+  }
+  .market-data {
+    /* display: flex; */
+    justify-content: space-around;
   }
 }
 
@@ -101,6 +116,7 @@ a {
   flex-direction: column;
   align-items: center;
   margin-top: 25px;
+  margin-bottom: 25px;
   border-right: 2px solid gray;
 }
 

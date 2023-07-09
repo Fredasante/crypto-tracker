@@ -61,7 +61,7 @@ const page = () => {
           </span>
 
           <span style={{ display: "flex" }}>
-            <Typography variant="h6" className="heading">
+            <Typography variant="h6">
               <span className="heading">Market Cap:</span> {symbol}{" "}
               {numberWithCommas(
                 coin?.market_data.market_cap[currency.toLowerCase()].toString()
