@@ -1,6 +1,11 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+"use client";
+
+import Banner from "@/components/Banner";
 
 export default function Home() {
-  return <main className={styles.main}></main>;
+  return (
+    <main>
+      <Banner />
+    </main>
+  );
 }

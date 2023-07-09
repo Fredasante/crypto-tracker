@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: gold;
+}
+
+.app {
+  background-color: #14161a;
+  color: white;
+}
+
+/* HEADER */
+
+.toolbar {
+  display: flex;
+}
+
+.title-link {
+  flex: 1;
+}
+
+.title {
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* BANNER */
+.banner {
+  padding-top: 60px;
+  background-image: url(/banner2.jpg);
+  height: 400px;
+}
+
+.tagline {
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+@media only screen and (max-width: 700px) {
+  .tagline-1 {
+    font-size: 25px;
+  }
+}
+
+/* CAROUSEL */
+.carousel {
+  height: 200px;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: white;
+}
+
+/* COINS TABLE */
+@media only screen and (max-width: 700px) {
+  .coininfo-title {
+    font-size: 22px;
+  }
+}
+
+.row {
+  background: #16171a;
+  cursor: pointer;
+}
+
+.table-body :hover {
+  background: #131111;
+}
+
+/* COIN PAGE */
+.container {
+  display: flex;
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.sidebar {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+  border-right: 2px solid gray;
+}
+
+@media only screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+
+.market-data {
+  width: 100%;
+  padding: 0px 25px;
+}
+
+.heading {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.description {
+  width: 100%;
+  padding: 25px;
+  padding-bottom: 15;
+  padding-top: 0;
+}
+
+/* COIN INFO */
+.info-container {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+  padding: 40px;
+}
+
+@media only screen and (max-width: 700px) {
+  .info-container {
+    width: 100%;
+    margin-top: 0;
+    padding: 20;
+    padding-top: 0;
+  }
+}
+
+/* SELECT BUTTON */
+.select-button {
+  border: 1px solid gold;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.select-button:hover {
+  background: gold;
+  color: black;
+}
