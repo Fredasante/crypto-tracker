@@ -1,3 +1,4 @@
+import { CryptoState } from "@/context/store";
 import { Box, Button, TextField } from "@mui/material";
 import { useState } from "react";
 
@@ -6,7 +7,18 @@ const SignUp = ({ handleClose }) => {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
 
-  const handleSubmit = () => {};
+  const { setAlert } = CryptoState();
+
+  const handleSubmit = () => {
+    if (password !== confirmPassword) {
+      setAlert({
+        open: true,
+        message: "Passwords do not match",
+        type: "error",
+      });
+      return;
+    }
+  };
 
   return (
     <Box
