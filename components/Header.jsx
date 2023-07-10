@@ -11,6 +11,7 @@ import {
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { CryptoState } from "../context/store";
 import Link from "next/link";
+import AuthModal from "./Authentification/AuthModal";
 
 const Header = () => {
   const { currency, setCurrency } = CryptoState();
@@ -38,6 +39,8 @@ const Header = () => {
               <MenuItem value={"USD"}>USD</MenuItem>
               <MenuItem value={"GBP"}>GBP</MenuItem>
             </Select>
+
+            <AuthModal />
           </Toolbar>
         </Container>
       </AppBar>
