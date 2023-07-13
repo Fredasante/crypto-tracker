@@ -28,21 +28,30 @@ const Header = () => {
       <AppBar color="transparent" position="static">
         <Container>
           <Toolbar>
-            <Link href="/" className="title-link">
-              <Typography className="title">Cosmic Crypto</Typography>
+            <Link href={"/"} className="title-link">
+              <Typography className="title">Cosmic</Typography>
             </Link>
 
             <Select
               value={currency}
               onChange={(e) => setCurrency(e.target.value)}
-              style={{ width: 100, height: 40, marginLeft: 15 }}
+              style={{ width: 100, height: 40, marginLeft: 10 }}
             >
               <MenuItem value={"USD"}>USD</MenuItem>
               <MenuItem value={"GBP"}>GBP</MenuItem>
             </Select>
 
             <Link href={"/login"}>
-              <Button variant="outlined">Login</Button>
+              <Button
+                style={{
+                  color: "white",
+                  marginLeft: 3,
+                  borderColor: "white",
+                }}
+                variant="outlined"
+              >
+                Login
+              </Button>
             </Link>
           </Toolbar>
         </Container>

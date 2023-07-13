@@ -30,14 +30,6 @@ a {
   font-weight: bold;
 }
 
-@media only screen and (max-width: 500px) {
-  .title-link {
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-  }
-}
-
 /* BANNER */
 .banner {
   padding-top: 60px;
@@ -96,25 +88,10 @@ a {
   display: flex;
 }
 
-@media only screen and (max-width: 576px) {
-  .container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .market-data {
-    flex-direction: column;
-    align-items: start;
-  }
-}
-
 @media only screen and (max-width: 720px) {
   .container {
     flex-direction: column;
-  }
-  .market-data {
-    /* display: flex; */
-    justify-content: space-around;
+    align-items: center;
   }
 }
 
@@ -187,7 +164,6 @@ a {
 /* LOGIN PAGE */
 
 .login-container::before {
-  content: "";
   position: absolute;
   left: 0;
   top: 0;
