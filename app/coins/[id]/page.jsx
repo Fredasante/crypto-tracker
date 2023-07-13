@@ -39,9 +39,11 @@ const page = () => {
         <Typography className="heading" variant="h4">
           {coin?.name}
         </Typography>
-        <Typography className="description" variant="subtitle-1">
-          {parse(coin?.description.en.split(". ")[0])}
-        </Typography>
+        <div className="market-data" style={{ marginBottom: 10 }}>
+          <Typography variant="subtitle-1">
+            {parse(coin?.description.en.split(". ")[0])}
+          </Typography>
+        </div>
 
         <div className="market-data">
           <span>
