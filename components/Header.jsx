@@ -2,6 +2,8 @@
 
 import {
   AppBar,
+  Button,
+  ButtonGroup,
   Container,
   MenuItem,
   Select,
@@ -11,7 +13,6 @@ import {
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { CryptoState } from "../context/store";
 import Link from "next/link";
-import AuthModal from "./Authentification/AuthModal";
 
 const Header = () => {
   const { currency, setCurrency } = CryptoState();
@@ -27,7 +28,7 @@ const Header = () => {
       <AppBar color="transparent" position="static">
         <Container>
           <Toolbar>
-            <Link href={"/"} className="title-link">
+            <Link href="/" className="title-link">
               <Typography className="title">Cosmic Crypto</Typography>
             </Link>
 
@@ -40,7 +41,9 @@ const Header = () => {
               <MenuItem value={"GBP"}>GBP</MenuItem>
             </Select>
 
-            <AuthModal />
+            <Link href={"/login"}>
+              <Button variant="outlined">Login</Button>
+            </Link>
           </Toolbar>
         </Container>
       </AppBar>

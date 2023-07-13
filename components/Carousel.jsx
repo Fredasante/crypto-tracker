@@ -1,3 +1,5 @@
+"use client";
+
 import { TrendingCoins } from "@/config/api";
 import { CryptoState } from "@/context/store";
 import axios from "axios";
