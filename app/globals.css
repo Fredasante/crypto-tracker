@@ -32,7 +32,7 @@ a {
 
 /* BANNER */
 .banner {
-  padding-top: 60px;
+  padding-top: 40px;
   background-image: url(/banner2.jpg);
   height: 400px;
 }
@@ -48,6 +48,9 @@ a {
 @media only screen and (max-width: 700px) {
   .tagline-1 {
     font-size: 25px;
+  }
+  .banner {
+    padding-top: 15px;
   }
 }
 
@@ -313,4 +316,24 @@ form .form-help :where(label, a) {
   .form-wrapper form {
     margin: 25px 0 40px;
   }
+}
+
+/* CurrencyInput */
+.group {
+  margin: 0 auto 20px;
+  display: grid;
+  grid-template-columns: 100px 100px;
+  border-radius: 15px;
+}
+input,
+select {
+  background: black;
+  border: 0;
+  color: #fff;
+}
+input {
+  padding-left: 10px;
+}
+select {
+  padding: 15px;
 }

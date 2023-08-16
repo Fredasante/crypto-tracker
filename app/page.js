@@ -1,6 +1,6 @@
+import Accordions from "@/components/Accordions";
 import Banner from "@/components/Banner";
 import CoinsTable from "@/components/CoinsTable";
-import HomePage from "@/components/HomePage";
 
 export default function Home() {
   return (
@@ -8,6 +8,7 @@ export default function Home() {
       {/* <HomePage /> */}
       <Banner />
       <CoinsTable />
+      <Accordions />
     </main>
   );
 }
