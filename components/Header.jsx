@@ -40,7 +40,7 @@ const Header = () => {
               <MenuItem value={"GBP"}>GBP</MenuItem>
             </Select>
 
-            <Link href={"/login"}>
+            {/* <Link href={"/login"}>
               <Button
                 style={{
                   color: "white",
@@ -51,7 +51,7 @@ const Header = () => {
               >
                 Login
               </Button>
-            </Link>
+            </Link> */}
           </Toolbar>
         </Container>
       </AppBar>
